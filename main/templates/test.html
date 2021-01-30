@@ -6,6 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Testovaia stranisa</h2>
+    <h1>Testovaia stranisa</h1>
+    <div>v2</div>
+    {% for todo in todo_list %}
+    <h2>{{ todo.text }} - {{ todo.created_at }}</h2>
+    {% endfor %}
 </body>
 </html>
